@@ -21,7 +21,6 @@ function ChosenServices() {
     this.buildList = function() {
         var html = '';
         this.chosen.forEach(service => {
-            console.log(service)
             html = html + `<li>${ service.title }</li>`;
         });
         return html;

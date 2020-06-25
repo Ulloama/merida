@@ -20,7 +20,7 @@ function Services() {
                     <h5 class="card-title">${service.title}</h5>
                     <p class="card-text">${service.description}</p>
                     <p class="card-text">$${service.price}</p>
-                    <button id="chose" type="button" class="btn btn-outline-dark" onclick = "addChosenService(${service.id})">Seleccionar</button>
+                    <input type="button" id="chose" class="btn btn-outline-dark"  value="Seleccionar" onclick="addChosenService('${service.id}')">
                 </div>
             </div>
         </div>
@@ -39,3 +39,5 @@ function Services() {
     listServices.innerHTML = html;
     }
 }
+
+/*<button type="button" class="btn btn-outline-dark" onclick = "addChosenService(${service.id})">Seleccionar</button>*/

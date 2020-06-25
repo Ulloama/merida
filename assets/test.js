@@ -82,14 +82,14 @@ function colorPaletteAdd() {
 
 
 //Con la siguiente función agrego a la lista de "Opciones elegidas", el servicio selccionado por el usuario.
-/*
+
 function choisenService(service) {
     var addService = document.getElementById("chosen-services");
     var newLi = document.createElement("li")
     newLi.innerHTML = service;
     addService.appendChild(newLi);
 }
-*/
+
 
 window.onload = function () {
     /*socialManagement = document.getElementById("1");

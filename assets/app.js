@@ -2,6 +2,10 @@ var chosenService
 var services
 var service
 
+function clearStorage () {
+
+}
+
 function addChosenService(id) {
     var service = services.getById(id)[0];
     chosenService.add(service);  
