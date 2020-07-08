@@ -38,17 +38,18 @@ function renderChosen() {
                 totalPrice.append(`Total $${total}`)
 
 
-                var deleteChosen = $(".close");
-                deleteChosen.click(function() {
-                    event.preventDefault();
-                    let indexDelet = $(event.target).attr("id");
-                    $(event.target).parent().parent().parent().parent().remove().prop('disabled', false);
-                    localStorage.setItem('chosen', JSON.stringify(chosen));
-                    chosen.splice(indexDelet)
-                });
+
     });
 
-
+    var deleteChosen = $(".close");
+    deleteChosen.click(function() {
+        event.preventDefault();
+        let indexDelet = $(event.target).attr("id");
+        $(event.target).parent().parent().parent().parent().remove();
+        localStorage.setItem('chosen', JSON.stringify(chosen));
+        chosen.splice(indexDelet, 1)
+    renderChosen();
+    });
 
 };
 
