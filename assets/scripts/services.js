@@ -7,21 +7,22 @@ function renderServices(data) {
                     <h5 class="card-title">${service.title}</h5>
                     <p class="card-text">${service.description}</p>
                     <p class="card-text">$${service.price}</p>
-                    <button id="chose" class="btn btn-outline-dark" data-id="${index}">Seleccionar</button>
+                    <input type="button" class="btn btn-outline-dark" data-id="${index}" value="Seleccionar">
                 </div>
             </div>
         </div>`
     )
     });
 
-    var chosenService = $(".btn-outline-dark");
+    var chosenService = $("input.btn-outline-dark");
     chosenService.click(function(event) {
         
         var indexChosen = $(event.target).data("id");
         addService(indexChosen); 
         lengthChosen.slideDown();
         cart.slideDown();
-        $(this).prop('disabled', true);
+        totalPrice.slideDown();
+        $(this).attr('disabled', 'disabled');
     });
 
 };

@@ -13,7 +13,7 @@ function addService(index) {
 
 function renderChosen() {
     chosenList.empty();
-    var total = 0;
+    total = 0;
     chosen.forEach(function(service, index) {
 
         chosenList.append(
@@ -30,26 +30,31 @@ function renderChosen() {
             </li>`
     )
 
-        lengthChosen.empty();
-        lengthChosen.append(`Opciones elegidas (${chosen.length})`)
-
-        total = total + service.price;
-                totalPrice.empty();
-                totalPrice.append(`Total $${total}`)
-
-
-
+    total = total + service.price;
     });
 
-    var deleteChosen = $(".close");
-    deleteChosen.click(function() {
+    lengthChosen.empty();
+    lengthChosen.append(`Opciones elegidas (${chosen.length})`)
+    
+    totalPrice.empty();
+    totalPrice.append(`Total $${total}`);
+
+    var chosenDelete= $(".close")
+    chosenDelete.click(function(){
         event.preventDefault();
         let indexDelet = $(event.target).attr("id");
-        $(event.target).parent().parent().parent().parent().remove();
+        $(event.target).parent().parent().parent().remove();
+        chosen.splice(indexDelet, 1) 
         localStorage.setItem('chosen', JSON.stringify(chosen));
-        chosen.splice(indexDelet, 1)
-    renderChosen();
+        renderChosen();
+        if (chosen.length == 0){
+            lengthChosen.slideUp();
+            cart.slideUp();
+            totalPrice.slideUp();
+            $(".btn-outline-dark").removeAttr('disabled');
+        }
     });
-
+    
 };
+
 

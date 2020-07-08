@@ -3,10 +3,11 @@ $(document).ready(() =>{
     chosenList = $("#chosen-list");
     lengthChosen = $("#length-list")
     lengthChosen.hide();
-    cart = $(".btn-dark");
+    cart = $("#chose-action");
     cart.hide();
-    totalPrice= $("#total");
+    totalPrice= $("#total-price");
     deleteChosen= $("#delete-chosen");
+
 
     $.ajax({
         method: 'GET',
@@ -70,6 +71,8 @@ console.log("Tu puedes Mariano!");
 $("#empty-chosen").click(function() { 
     chosenList.empty();
     totalPrice.empty();
+    totalPrice.hide();
+    totalPrice.slideUp();
     lengthChosen.slideUp();
     cart.slideUp();
     chosen = [];
@@ -77,3 +80,4 @@ $("#empty-chosen").click(function() {
     localStorage.clear();
     $(".btn-outline-dark").prop('disabled', false);
 });
+
