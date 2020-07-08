@@ -1,4 +1,4 @@
-function renderServices() {
+function renderServices(data) {
     data.forEach(function(service, index) {
         listServices.append(
         `<div class="col mb-4" style="padding-top: 15px">
@@ -7,7 +7,7 @@ function renderServices() {
                     <h5 class="card-title">${service.title}</h5>
                     <p class="card-text">${service.description}</p>
                     <p class="card-text">$${service.price}</p>
-                    <input type="button" id="chose" class="btn btn-outline-dark" data-id="${index}" value="Seleccionar"></input>
+                    <button id="chose" class="btn btn-outline-dark" data-id="${index}">Seleccionar</button>
                 </div>
             </div>
         </div>`
@@ -15,11 +15,13 @@ function renderServices() {
     });
 
     var chosenService = $(".btn-outline-dark");
-    chosenService.click(function(event) { 
+    chosenService.click(function(event) {
+        
         var indexChosen = $(event.target).data("id");
         addService(indexChosen); 
-        lengthChosen.show("slow");
-        cart.show("slow");
+        lengthChosen.slideDown();
+        cart.slideDown();
+        $(this).prop('disabled', true);
     });
 
 };

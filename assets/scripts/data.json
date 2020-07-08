@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "title": "Gestión de redes",
+        "description" : "",
+        "price": 2000
+    },
+    {
+        "id": "2",
+        "title": "Campaña publicitaria",
+        "description" : "",
+        "price": 2000
+    },
+    {
+        "id": "3",
+        "title": "Restyling de marca",
+        "description" : "",
+        "price": 2000
+    },
+    {
+        "id": "4",
+        "title": "Fotografía",
+        "description" : "",
+        "price": 2000
+    },
+    {
+        "id": "5",
+        "title": "Paleta de colores",
+        "description" : "",
+        "price": 2000
+    },
+    {
+        "id": "6",
+        "title": "Creación de logo",
+        "description" : "",
+        "price": 2000
+    }
+] 
