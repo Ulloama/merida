@@ -1,17 +1,46 @@
-body {
-    font-size: 12px;
-    margin: 0;
-}
-
-#packs-section {
-    width: 100%;
-    padding-top: 25px;
-    vertical-align: middle;
+.containers {
+    padding-bottom: 30px;
 }
 
 footer {
-    background: white;
-    padding: 20px 0;
-    margin: 36px 0 0 0;
-    font-size: 1em;
+    background: #f8c060;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:before {
+	background: #c75675;
+}
+
+
+#redes ul li a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px 9px;
+    font-size: 25px;
+
+}
+
+#marca {
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#c75675;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 100%;
+}
+
+#slide-up.icon-back {
+	transform: rotate(-90deg);
 }

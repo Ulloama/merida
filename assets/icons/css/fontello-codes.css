@@ -1,0 +1,8 @@
+
+.icon-cart:before { content: '\e800'; } /* '' */
+.icon-delete:before { content: '\e801'; } /* '' */
+.icon-back:before { content: '\e802'; } /* '' */
+.icon-cancel:before { content: '\e803'; } /* '' */
+.icon-gmail:before { content: '\e804'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-fb:before { content: '\f308'; } /* '' */

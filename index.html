@@ -4,187 +4,294 @@
 		<title>Merida</title>
 		<link rel="shortcut icon" href="assets/images/favicon.ico">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="assets/styles/styles.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/icons/css/fontello.css">
+		<link rel="stylesheet" href="assets/styles/styles.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script defer src="assets/scripts/main.js"></script>
+		<script src="assets/scripts/main.js"></script>
+		<script src="assets/plugins/smooth-scroll.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 rounded" style="background-color: #f8c060;">
+			<nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 rounded" style="background: #f8c060;">
 				<a class="navbar-brand" href="#">
-					<img src="assets/images/logoM.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+					<img src="assets/images/logoM.png" width="30" height="30" class="d-inline-block align-top" alt=""
+						loading="lazy">
 					Mérida
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-				  <ul class="navbar-nav">
-					<li class="nav-item active">
-					  <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#packs-section">Packs</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Sobre nosotras</a>
-					</li>
-				  </ul>
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a data-scroll class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a data-scroll class="nav-link" href="#packs-section">Packs</a>
+						</li>
+						<li class="nav-item">
+							<a data-scroll class="nav-link" id="craft-pack-2" href="">Armar pack</a>
+						</li>
+						<li class="nav-item">
+							<a data-scroll class="nav-link" href="#portfolio">Portfolio</a>
+						</li>
+					</ul>
+	
 				</div>
-			  </nav>
+			</nav>
 		</header>
-		<div id="contenedor" class="container">
-			<section id="home-section">
-				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						  <img src="assets/images/desing.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="assets/images/social.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="assets/images/restyling.png" class="d-block w-100" alt="...">
-					  </div>
+	
+		<section id="home-section" class="container containers">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/images/desing.png" class="d-block w-100" alt="...">
 					</div>
-				  </div>
-			</section>
-
-			<section id="packs-section">
-				<div class="row row-cols-1 row-cols-md-2">
-					<div class="col mb-4">
-					  <div class="card text-center">
+					<div class="carousel-item">
+						<img src="assets/images/social.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/images/restyling.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="packs-section" class="container containers">
+			<div style="padding-bottom: 20px;">
+				<img src="assets/images/packs.png" class="img-fluid max-width: 20%" alt="Responsive image">
+			</div>
+	
+	
+			<div>
+				<div class="card-deck" style="padding-bottom: 20px;">
+					<div class="card text-center border-dark">
 						<img src="assets/images/pack1.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <h5 class="card-title">Pack N°1</h5>
-						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						  <input type="button" class="btn btn-outline-dark btn-lg"value="Ver detalle" data-toggle="modal" data-target="#detalle">
-							<!-- Modal -->
-							<div class="modal fade" id="detalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered">
-									<div class="modal-content">
-										<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel" style="text-align: justify;">Detalles del pack</h5>
+							<button type="button" class="btn btn-lg btn-outline-dark" data-toggle="modal"
+								data-target="#detalle_1">Detalles</button>
+						</div>
+					</div>
+						<!-- Modal -->
+						<div class="modal fade" id="detalle_1" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Pack Gestión</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
-										</div>
-										<div class="modal-body">
-										Acá va el detalle de cada uno de los packs.
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-										standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
-										a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-										remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-										Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-										</div>
-										<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+									<div class="modal-body">
+										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="assets/images/pack1_a.png" class="d-block w-100" alt="...">
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- Fin modal -->
 						</div>
-					  </div>
-					</div>
-					<div class="col mb-4">
-					  <div class="card text-center">
-						<img id="imageCard" src="assets/images/pack2.png" class="card-img-top" alt="...">
+						<!-- Fin modal -->
+
+
+
+					<div class="card text-center border-dark">
+						<img src="assets/images/pack2.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <h5 class="card-title">Pack N°2</h5>
-						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						  <input type="button" class="btn btn-outline-dark btn-lg"value="Ver detalle" data-toggle="modal" data-target="#detalle">
-						  <!-- Modal -->
-						  <div class="modal fade" id="detalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog modal-dialog-centered">
-								  <div class="modal-content">
-									  <div class="modal-header">
-									  <h5 class="modal-title" id="exampleModalLabel" style="text-align: justify;">Detalles del pack</h5>
-									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										  <span aria-hidden="true">&times;</span>
-									  </button>
-									  </div>
-									  <div class="modal-body">
-									  Acá va el detalle de cada uno de los packs.
-									  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-									  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
-									  a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-									  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-									  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-									  </div>
-									  <div class="modal-footer">
-									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									  </div>
-								  </div>
-							  </div>
-						  </div>
-						  <!-- Fin modal -->
+							<button type="button" class="btn btn-lg btn-outline-dark" data-toggle="modal"
+								data-target="#detalle_2">Detalles</button>
 						</div>
-					  </div>
 					</div>
-					<div class="col mb-4">
-					  <div class="card text-center">
-						<img id="imageCard" src="assets/images/pack3.png" class="card-img-top" alt="...">
-						<div class="card-body">
-						  <h5 class="card-title">Pack N°3</h5>
-						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-						  <input type="button" class="btn btn-outline-dark btn-lg"value="Ver detalle" data-toggle="modal" data-target="#detalle">
-						  <!-- Modal -->
-						  <div class="modal fade" id="detalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog modal-dialog-centered">
-								  <div class="modal-content">
-									  <div class="modal-header">
-									  <h5 class="modal-title" id="exampleModalLabel" style="text-align: justify;">Detalles del pack</h5>
-									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										  <span aria-hidden="true">&times;</span>
-									  </button>
-									  </div>
-									  <div class="modal-body">
-									  Acá va el detalle de cada uno de los packs.
-									  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-									  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
-									  a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-									  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-									  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-									  </div>
-									  <div class="modal-footer">
-									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									  </div>
-								  </div>
-							  </div>
-						  </div>
-						  <!-- Fin modal -->
+						<!-- Modal -->
+						<div class="modal fade" id="detalle_2" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Pack Restyling</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="assets/images/pack2_a.png" class="d-block w-100" alt="...">
+												</div>
+											</div>
+										  </div>
+									</div>
+								</div>
+							</div>
 						</div>
-					  </div>
+						<!-- Fin modal -->
+				</div>
+				<div class="card-deck" style="padding-bottom: 20px;">
+					<div class="card text-center border-dark">
+						<img src="assets/images/pack3.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<button type="button" class="btn btn-lg btn-outline-dark" data-toggle="modal"
+								data-target="#detalle_3">Detalles</button>
+						</div>
 					</div>
-					<div class="col mb-4">
-					  <div class="card text-center">
-						<img id="imageCard" src="assets/images/pack_armado.png" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">También podés armar el pack a tu gusto</h5>
-							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<button type="button" class="btn btn-outline-dark btn-lg" id="craft-pack">Armar pack</button>
+						<!-- Modal -->
+						<div class="modal fade" id="detalle_3" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Pack Restyling</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+											  <div class="carousel-item active">
+												<img src="assets/images/pack3_a.png" class="d-block w-100" alt="...">
+											  </div>
+											  <div class="carousel-item">
+												<img src="assets/images/pack3_b.png" class="d-block w-100" alt="...">
+											  </div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+											  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											  <span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+											  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+											  <span class="sr-only">Next</span>
+											</a>
+										  </div>
+									</div>
+								</div>
+							</div>
 						</div>
-					  </div>
+						<!-- Fin modal -->
+					<div class="card text-center border-dark">
+						<img src="assets/images/pack_armado.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<button type="button" class="btn btn-lg btn-outline-dark" id="craft-pack">¡Vamos!</button>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
+	
+		<section id="portfolio" class="container containers">
+			<div style="padding-bottom: 20px;">
+				<img src="assets/images/portfolio.png" class="img-fluid max-width: 20%" alt="Responsive image">
+			</div>
+			<div>
+				<div class="row">
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="https://www.instagram.com/merida.redes/" target="_blank">
+							<img src="assets/images/portfolio/merida.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="https://www.instagram.com/allie_showroom/" target="_blank">
+							<img src="assets/images/portfolio/allie.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="https://www.instagram.com/donhenzoferreteria/" target="_blank">
+							<img src="assets/images/portfolio/henzo.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="#" target="_blank">
+							<img src="assets/images/portfolio/criton.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="https://www.instagram.com/saludable_con_essen/" target="_blank">
+							<img src="assets/images/portfolio/saludable.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+					<div class="col" style="padding-bottom: 20px; border-radius: 100%;">
+						<a href="https://www.instagram.com/quesano.essen/" target="_blank">
+							<img src="assets/images/portfolio/quesano.png" class="img-fluid max-width: 20% shadow"
+								style="border-radius: 100%;" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-			<footer>
-				<div>
-					Córdoba, CP 5000, Argentina<br>
-					© 2020 Merida, todos los derechos reservados.
-				</div> 
-			</footer>
-		</div>
+		<!--- <section id="us" class="container containers">
+			<div style="padding-bottom: 20px;">
+				<img src="assets/images/us.png" class="img-fluid max-width: 20%" alt="Responsive image">
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img src="assets/images/us-d.png" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body ">
+							<h5 class="card-title text-right">Somos Jose y Vicki</h5>
+							<p class="card-text">Amigas y compañeras de la facu, nos recibimos juntas en Comunicación Social
+								y
+								emprendimos juntas el camino de lo que amamos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		
+		<footer>
+			<div class="row no-gutters" >
+				<div id="marca" class="col-8">
+					<p id="p1"> <strong>Merida®</strong>. Todos los derechos reservados.</p>
+					<p id="p2">Córdoba, CP 5000, Argentina</p>
+				</div>
+				<div id="redes" class="col-4">
+					<ul class="nav justify-content-end" >
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.instagram.com/merida.redes/" target="_blank"><span class="icon-instagram"></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href=""><span class="icon-fb"></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href=""><span class="icon-gmail"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<span id="slide-up" class="ir-arriba icon-back"></span>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
 
 
 	</body>

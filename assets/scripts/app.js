@@ -7,6 +7,8 @@ $(document).ready(() =>{
     cart.hide();
     totalPrice= $("#total-price");
     deleteChosen= $("#delete-chosen");
+    chosenForm= $("input[name='chosen.form']");
+
 
 
     $.ajax({
@@ -57,9 +59,6 @@ $(document).ready(() =>{
                 required: 'El campo es obligatorio',
                 minlength: 'Ingrese al menos 10 caracteres'
             }
-        },
-        submitHandler: function(form) {
-            console.log(form)
         }
     });
 
@@ -72,12 +71,15 @@ $("#empty-chosen").click(function() {
     chosenList.empty();
     totalPrice.empty();
     totalPrice.hide();
-    totalPrice.slideUp();
-    lengthChosen.slideUp();
-    cart.slideUp();
+    //totalPrice.slideUp();
+    //lengthChosen.slideUp();
+    //cart.slideUp();
     chosen = [];
     chosen.length = 0;
     localStorage.clear();
-    $(".btn-outline-dark").prop('disabled', false);
+    renderChosen();
 });
 
+$("#send-form").click(function (){
+    renderForm();
+});
